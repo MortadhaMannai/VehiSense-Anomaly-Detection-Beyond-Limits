@@ -4,18 +4,26 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Neural network based anomaly detection for vehicle components using oscilloscope recordings.
+-----------------------------------------------------------------------------------------------------------
+
+author : Manai Mortadha 
+
+This repository contains the code and resources for an Artificial Neural Network (ANN)-based anomaly detection system designed to identify faults or anomalies in vehicle components using oscilloscope recordings. The system leverages machine learning techniques to enhance the monitoring and maintenance of automotive systems.
+
 
 Example of the time series data to be considered (voltage over time - $z$-normalized):
-
-<img src="img/battery.svg" width="500">
-
 The task comes down to binary univariate time series classification.
 
-## FCN Architecture
+## Project Overview :
+Modern vehicles are equipped with numerous electronic components, and oscilloscope recordings provide valuable insights into their performance. This project aims to automate the process of identifying anomalies or faults in these components by utilizing a trained ANN model.
 
-<img src="img/fcn.svg" width="500">
+The core components of this project include data collection and preparation, training the ANN model, and evaluating its performance. By detecting anomalies in vehicle components early, this system can contribute to improved vehicle safety and reliability.
 
-*Note: See ResNet architecture in `img/ResNet.png`*
+##Features :
+Data collection and preprocessing utilities.
+Anomaly detection using a trained ANN model.
+Scalable and adaptable architecture for various vehicle components.
+Easy-to-use command-line interface.
 
 ## Dependencies
 
@@ -180,7 +188,82 @@ $ python oscillogram_classification/knn.py --train_path /TRAIN_DATA --test_path 
 ## Positive (1) and Negative (0) Sample for each Component
 
 ### Normalized Battery Voltage (Engine Starting Process)
-![](img/battery.svg)
+
+Installation
+To set up this project, follow these steps:
+
+Clone the repository to your local machine:
+
+```
+git clone https://github.com/your-username/vehicle-component-anomaly-detection.git
+
+```
+
+##Install the required dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+##Usage
+
+Data Preparation:
+
+Before using the ANN model, you need to prepare your oscilloscope data. Follow these steps:
+Place your oscilloscope recordings in the data/recordings directory.
+
+Run the data preprocessing script to convert and standardize the data:
+
+```
+python data_preparation.py
+```
+
+This script will generate processed data files in the data/processed directory.
+
+Training the ANN Model
+To train the ANN model, execute the following command:
+
+```
+python train_model.py
+
+```
+
+This command will train the model using the processed data and save the trained model to the models directory.
+
+##Evaluation:
+To evaluate the model's performance, use the evaluation script:
+
+```
+python evaluate_model.py
+
+```
+This script will provide metrics and visualizations to assess the model's accuracy and effectiveness in anomaly detection.
+
+##Contributing:
+
+Contributions are welcome! If you want to contribute to this project, please follow these guidelines:
+
+Fork the repository.
+
+Create a new branch for your feature or bug fix:
+
+```
+git checkout -b feature/your-feature-name
+
+```
+
+Make your changes and commit them with a clear and concise message.
+
+Push your changes to your forked repository:
+
+```
+git push origin feature/your-feature-name
+
+```
+Create a pull request to the main repository, explaining your changes.
+
+##License:
+This project is licensed under the MIT License.
 
 ## Training and Validation Accuracy of Selected Models
 
