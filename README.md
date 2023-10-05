@@ -1,4 +1,4 @@
-# Oscillogram Classification
+# VehiSense-Anomaly-Detection-Beyond-Limits
 
 ![unstable](https://img.shields.io/badge/stability-unstable-orange)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -6,7 +6,7 @@
 Neural network based anomaly detection for vehicle components using oscilloscope recordings.
 -----------------------------------------------------------------------------------------------------------
 
-author : Manai Mortadha 
+# Author : Manai Mortadha 
 
 This repository contains the code and resources for an Artificial Neural Network (ANN)-based anomaly detection system designed to identify faults or anomalies in vehicle components using oscilloscope recordings. The system leverages machine learning techniques to enhance the monitoring and maintenance of automotive systems.
 
