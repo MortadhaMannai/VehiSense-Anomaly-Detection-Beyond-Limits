@@ -199,13 +199,13 @@ git clone https://github.com/your-username/vehicle-component-anomaly-detection.g
 
 ```
 
-##Install the required dependencies:
+## Install the required dependencies:
 
 ```
 pip install -r requirements.txt
 ```
 
-##Usage
+## Usage
 
 Data Preparation:
 
@@ -220,7 +220,7 @@ python data_preparation.py
 
 This script will generate processed data files in the data/processed directory.
 
-Training the ANN Model
+## Training the ANN Model
 To train the ANN model, execute the following command:
 
 ```
@@ -230,7 +230,7 @@ python train_model.py
 
 This command will train the model using the processed data and save the trained model to the models directory.
 
-##Evaluation:
+## Evaluation:
 To evaluate the model's performance, use the evaluation script:
 
 ```
@@ -239,7 +239,7 @@ python evaluate_model.py
 ```
 This script will provide metrics and visualizations to assess the model's accuracy and effectiveness in anomaly detection.
 
-##Contributing:
+## Contributing:
 
 Contributions are welcome! If you want to contribute to this project, please follow these guidelines:
 
@@ -262,7 +262,7 @@ git push origin feature/your-feature-name
 ```
 Create a pull request to the main repository, explaining your changes.
 
-##License:
+## License:
 This project is licensed under the MIT License.
 
 ## Training and Validation Accuracy of Selected Models
